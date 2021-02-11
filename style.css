@@ -1,3 +1,19 @@
 h1 {
+  color: #000;
+}
+
+body {
   text-align: center;
+}
+
+.container {
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.temperatures {
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
