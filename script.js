@@ -67,6 +67,12 @@ function showWeatherDetails(response) {
   document.querySelector("#temp").innerHTML = temperature;
   //display city name
   document.querySelector("#city").innerHTML = response.data.name;
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 
 //add event listener to the input text box and start the handler function
