@@ -6,6 +6,10 @@ h1 {
   color: #000;
 }
 
+input {
+  width: 100%;
+}
+
 .container {
   display: block;
   padding: 20px;
@@ -13,14 +17,22 @@ h1 {
   width: 80%;
 }
 
+.wrapper {
+  margin: auto;
+  width: 40%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
 .temperatures {
-  font-size: x-large;
+  font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 50px;
 }
 
 .weatherIcon {
   padding: 0px;
   border: 0px;
-  width: 150px;
+  width: 200px;
   margin: 0px auto;
 }

@@ -12,30 +12,37 @@
     <div class="row">
       <div class="col">
      <h1>
-     The Weather Now in </br>
+     The Weather Now in <br/>
      <span id="city">Any City</span>
      </h1>
      <p> Today is <span class = "today"><em>Saturday 28 November 2020, 17:20 </em></span> hrs</p>
       </div>
     </div>
-   <div class="row">
-     <div class="col-6"><img class = "weatherIcon" id="icon" src="http://openweathermap.org/img/wn/10d@2x.png"></div>
+   <div class = "wrapper">
+    <div class="row">
+     <div class="col-6">
+       <img class = "weatherIcon" id="icon" src="http://openweathermap.org/img/wn/10d@2x.png">
+      </div>
      <div class="col-6 temperatures">
-      <p><span id=temp> --</span>
+        <p><span id=temp> --</span>
         <a href="" id="celsius"> °C </a>| 
         <a href="" id="fahrenheit">°F</a>
-      </p>
-      </div>
+        </p>
       </div>
     </div>
-  <div class="row">
-    <div class="col"> 
+  </div>
+
+   <div class="row justify-content-center">
+    <div class="col-6"> 
       <form id="enter-city">
-        <input type="text" placeholder="Enter any city...           🔍" autocomplete="off" id="text">
+        <input type="text" placeholder="Enter any city name..." autocomplete="off" id="text">
       </form>
      </div>
    </div>
-  <!--Forecast section begins-->
+   </div>
+
+
+   <!--Forecast section begins-->
    <div class="row">
      <div class="col">
        <div class = "forecast">
@@ -44,9 +51,9 @@
       Forecast
     </h2>
        </div>
-  </div>
-</div>
- <div class="row">
+    </div>
+   </div>
+   <div class="row">
     <div class="col">
         <div class="border-info card mb-3">
           <h3>Day 1</h3>
@@ -57,7 +64,7 @@
         </div>
       </div>
 
-   <div class="col">
+     <div class="col">
       <div class="border-info card mb-3">
          <h3>Day 2</h3>
          <ul class="list-unstyled">
@@ -96,10 +103,10 @@
             <li>-- F
           </div>
       </div>
- </div>   
-                   
-<!--Forecast section ends, Footber begins-->
-<div class="moreDetails">
+  
+               
+ <!--Forecast section ends, Footber begins-->
+ <div class="moreDetails">
     <p> Open Source - Code Available on GitHub
        <a href="https://github.com/marik3n/Weather-App">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
