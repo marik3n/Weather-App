@@ -25,6 +25,10 @@ input {
   padding: 10px;
 }
 
+.desc {
+  text-transform: capitalize;
+}
+
 .tempColumn {
   max-width: 50%;
   margin-top: 50px;
