@@ -15,19 +15,23 @@ input {
   padding: 20px;
   border-radius: 10px;
   width: 80%;
+  margin: 0px auto;
 }
 
 .wrapper {
   margin: auto;
-  width: 40%;
-  border: 3px solid green;
+  width: 400px;
+  /*border: 3px solid green;*/
   padding: 10px;
 }
 
-.temperatures {
-  font-size: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.tempColumn {
+  max-width: 50%;
   margin-top: 50px;
+}
+.temperature {
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .weatherIcon {

@@ -63,8 +63,8 @@ function eventHandler(event) {
 //variables defined inside a function can only be used inside the function
 
 function showWeatherDetails(response) {
-  let temperature = Math.round(response.data.main.temp);
-  document.querySelector("#temp").innerHTML = temperature;
+  celsiusResponse = response.data.main.temp;
+  document.querySelector("#temp").innerHTML = Math.round(celsiusResponse);
   //display city name
   document.querySelector("#city").innerHTML = response.data.name;
   document
@@ -75,23 +75,28 @@ function showWeatherDetails(response) {
     );
 }
 
-//add event listener to the input text box and start the handler function
-let form = document.querySelector("#enter-city");
-form.addEventListener("submit", eventHandler);
-
-/*change Celsius to F (not working)
+//change Celsius to F
 
 function changeToFahrenheit(event) {
   event.preventDefault();
   let newTempFahrenheit = document.querySelector("#temp");
-  newTempFahrenheit.innerHTML = `72`;
+  newTempFahrenheit.innerHTML = Math.round(celsiusResponse * (9 / 5) + 32);
 }
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", changeToFahrenheit);
+
+let celsiusResponse = null;
+
 function changeToCelsius(event) {
   event.preventDefault();
   let newTempCelsius = document.querySelector("#temp");
-  newTempCelsius.innerHTML = `14`;
+  newTempCelsius.innerHTML = Math.round(celsiusResponse);
 }
+
+let fahrenheit = document.querySelector("#fahrenheit");
 let celsius = document.querySelector("#celsius");
-celsius.addEventListener("click", changeToCelsius);*/
+
+fahrenheit.addEventListener("click", changeToFahrenheit);
+celsius.addEventListener("click", changeToCelsius);
+
+//add event listener to the input text box and start the handler function
+let form = document.querySelector("#enter-city");
+form.addEventListener("submit", eventHandler);
