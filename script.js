@@ -61,7 +61,6 @@ function eventHandler(event) {
 }
 
 //variables defined inside a function can only be used inside the function
-
 function showWeatherDetails(response) {
   celsiusResponse = response.data.main.temp;
   document.querySelector("#temp").innerHTML = Math.round(celsiusResponse);
@@ -73,6 +72,9 @@ function showWeatherDetails(response) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+  document.querySelector("#wind").innerHTML = response.data.wind.speed;
+  document.querySelector("#rain").innerHTML = response.data.main.humidity;
+  console.log(response);
 }
 
 //change Celsius to F
